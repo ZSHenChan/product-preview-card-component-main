@@ -1,0 +1,78 @@
+*{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    display: flex;
+    background-color: hsl(30, 38%, 92%);
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.content{
+    max-width: 40%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.left{
+    min-width: 50%;
+}
+.left img{
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+.right{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right .perfume{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 100;
+    letter-spacing: 0.3rem;
+}
+.right h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.right p{
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.price .new-price{
+    font-size: 2rem;
+    margin-right: 20px;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+.price .old-price{
+    font-size: 0.8rem;
+    font-family: 'Fraunces', serif;
+    text-decoration: line-through;
+}
+.right button{
+    min-height: 3rem;
+    border-radius: 10px;
+    border-color: hsl(158, 36%, 37%);
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    outline: none;
+}
+.right button img{
+    margin-right: 15px;
+}
