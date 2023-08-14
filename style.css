@@ -13,23 +13,29 @@
     min-height: 100vh;
 }
 .content{
-    max-width: 40%;
+    max-width: 70%;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
     background-color: white;
 }
 .left{
-    min-width: 50%;
+    min-width:50%;
+    max-width: 50%;
 }
 .left img{
     max-width: 100%;
     min-height: 100%;
     border-radius: 20px 0 0 20px;
 }
+.left #mobile-UI{
+    display:none;
+}
 .right{
-    padding: 2rem;
+    margin: 2rem;
     display: flex;
+    min-width: 40%;
+    max-width: 100%;
     flex-direction: column;
     justify-content: center;
 }
@@ -43,6 +49,7 @@
 .right h2{
     font-size: 2rem;
     margin-bottom: 20px;
+    font-family: 'Fraunces', serif;
 }
 .right p{
     font-weight: normal;
@@ -75,4 +82,22 @@
 }
 .right button img{
     margin-right: 15px;
+}
+
+@media(max-width:600px){
+    .content{
+        flex-direction: column;
+    }
+    .left{
+        min-width: 100%;
+    }
+    .left img{
+        border-radius: 20px 20px 0px 0px;
+    }
+    .left #mobile-UI{
+        display:flex;
+    }
+    .left #web-UI{
+        display:none;
+    }
 }
