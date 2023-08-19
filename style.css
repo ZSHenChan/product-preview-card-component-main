@@ -85,8 +85,12 @@
 }
 
 @media(max-width:600px){
+    .container{
+        width: 100vw;
+    }
     .content{
         flex-direction: column;
+        max-width: 90%;
     }
     .left{
         min-width: 100%;
