@@ -1,0 +1,104 @@
+$grid-breakpoints: (
+  xs: 0px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin xs {
+    @media (min-width: map-get($grid-breakpoints, "xs")){
+        @content;
+    }
+}
+@mixin sm {
+    @media (min-width: map-get($grid-breakpoints, "sm")){
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: map-get($grid-breakpoints, "md")){
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: map-get($grid-breakpoints, "lg")){
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: map-get($grid-breakpoints, "xl")){
+        @content;
+    }
+}
+@mixin xxl {
+    @media (min-width: map-get($grid-breakpoints, "xxl")){
+        @content;
+    }
+}
+
+@mixin breakpoint($bp:0){
+    @media (min-width: bp){
+        @content;
+    }
+}
+.container{
+    @include xs{
+        max-width: 25rem;
+    }
+    @include md{
+        max-width: 40rem;
+    }
+}
+.contentBox {
+    @include xs{
+        background-color: black;
+        color: white;
+        flex-direction: column;
+    }
+    @include sm{
+        background-color: white;
+        color: black;
+    }
+    @include md{
+        flex-direction: row;
+        background-color: black;
+        color: white;
+    }
+    @include lg{
+        background-color: white !important;
+        color: black;
+    }
+    @include xl{
+        background-color: black !important;
+        color: white;
+    }
+    @include xxl{
+        background-color: white !important;
+        color: black;
+    }
+}
+.left, .right {
+    @include xs{
+        width: 100%;
+    }
+    @include md{
+        width:100%;
+    }
+}
+.left{
+    picture, img {
+        @include xs{
+            display: flex;
+            width: 100%;
+            border-radius: 1rem 1rem 0rem 0rem;
+        }
+        @include md{
+            display: flex;
+            width: 100%;
+            border-radius: 1rem 0 0 1rem;
+        }
+    }
+}
+

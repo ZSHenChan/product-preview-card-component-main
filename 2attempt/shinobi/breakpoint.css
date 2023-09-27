@@ -1,0 +1,75 @@
+@media (min-width: 0px) {
+  .container {
+    max-width: 25rem;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 40rem;
+  }
+}
+
+@media (min-width: 0px) {
+  .contentBox {
+    background-color: black;
+    color: white;
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) {
+  .contentBox {
+    background-color: white;
+    color: black;
+  }
+}
+@media (min-width: 768px) {
+  .contentBox {
+    flex-direction: row;
+    background-color: black;
+    color: white;
+  }
+}
+@media (min-width: 992px) {
+  .contentBox {
+    background-color: white !important;
+    color: black;
+  }
+}
+@media (min-width: 1200px) {
+  .contentBox {
+    background-color: black !important;
+    color: white;
+  }
+}
+@media (min-width: 1400px) {
+  .contentBox {
+    background-color: white !important;
+    color: black;
+  }
+}
+
+@media (min-width: 0px) {
+  .left, .right {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .left, .right {
+    width: 100%;
+  }
+}
+
+@media (min-width: 0px) {
+  .left picture, .left img {
+    display: flex;
+    width: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+  }
+}
+@media (min-width: 768px) {
+  .left picture, .left img {
+    display: flex;
+    width: 100%;
+    border-radius: 1rem 0 0 1rem;
+  }
+}/*# sourceMappingURL=breakpoint.css.map */

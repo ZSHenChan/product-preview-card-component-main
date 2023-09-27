@@ -1,8 +1,21 @@
 @import url("https://fonts.google.com/specimen/Montserrat");
 @import url("https://fonts.google.com/specimen/Fraunces");
 
-@import "./mixin";
+
+//colours
 @import "./colors";
+
+// variables & functions
+
+//base & layout
+@import "./mixin";
+@import './breakpoint';
+
+//components (button, card, navbar)
+
+//utilities (padding, margin, opacity)
+
+
 * {
     padding: 0;
     margin: 0;
@@ -14,7 +27,6 @@ main {
     background: $backgroundColor;
 }
 .contentBox {
-    background: white;
     display: flex;
     border-radius: 1rem;
     max-width: 40rem;
@@ -22,16 +34,10 @@ main {
 
     .left {
         display: flex;
-        width: 50%;
-        
-        picture, img {
-            display: flex;
-            width: 100%;
-            border-radius: 1rem 0 0 1rem;
-        }
+        // width: 50%;
     }
     .right {
-        width: 50%;
+        // width: 50%;
         @include flexCenter(column);
         padding: 2rem;
         box-sizing: border-box;
